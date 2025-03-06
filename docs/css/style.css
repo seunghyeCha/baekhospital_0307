@@ -1,0 +1,377 @@
+/* 전체 특성 */
+html,body {
+    margin: 0 auto;
+    color: #121519;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section {
+    width: 1200px;
+    margin: inherit;
+    padding: 80px 0 0;
+    box-sizing: border-box;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+} 
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+#head {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    align-items: center;
+    z-index: 99;
+}
+#nav {
+    display: flex;
+}
+#nav > li {
+    width: 150px;
+    height: 80px;
+    position: relative;
+}
+#nav > li > a {
+    display: block;
+    text-align: center;
+    line-height: 80px;
+}
+#nav > li>:hover > a {
+    color: #f2efe7;
+    font-weight: 700;
+    background-color: #1f96d4;
+}
+.sub {
+    position: absolute;
+    top: 80px;
+    left : 0px;
+    width: 150px;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+    z-index: 122;
+    max-height: 0;
+    background-color: #1f96d4;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+.sub > li {
+    width: 150px;
+    height: 40px;
+}
+.sub > li > a {
+    display: block;
+    height: 100%;
+    color: #f2efe7;
+}
+.sub > li:hover {
+    font-weight: 600;
+    color: #f2efe7;
+    background-color: #1f4997;
+}
+#nav > li:hover .sub {
+    max-height: 200px;
+    opacity: 1;
+}
+
+#nav > li:hover, .sub:hover {
+    background: #1f96d4;
+    color: #f2efe7;
+}
+
+/* 배너 */
+#slider {
+    width: 100%;
+    max-height: 600px;
+    background-color: #1f4997;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+#slides {
+    display: flex;
+    transition : transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+}
+#indicators {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    transform: translate(-50%);
+    display: flex;
+    gap: 10px;
+}
+#indicators span {
+    width: 12px;
+    height: 12px;
+    background: #9acbd0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#indicators span.active {
+    background-color: #1f4997;
+}
+
+/* 공지사항&바로가기 */
+#ctt1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title h3 {
+    flex: 1;
+    text-align: center;
+}
+.title a {
+    margin-left: auto;
+    font-size: 0.8rem;
+}
+.title a:hover {
+    color: #dbdbdb;
+    font-weight: bold;
+}
+#notice {
+    width: 890px;
+    line-height: 40px;
+    border: 0.25px #dbdbdb solid ;
+    padding: 10px 20px;
+}
+#notice > ul  {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+#notice > ul > li::marker {
+    color: #333;
+}
+#notice > ul >  li > a:hover {
+    color: #1f96d4;
+    font-weight: bold;
+}
+#notice span {
+    float: right;
+    font-size: 0.9rem;
+} 
+#shortcut1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    gap: 20px;
+}
+#shortcut1 img {
+    width: 50px;
+    height: 40px;
+}
+#shortcut1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100% ;
+    height: 60px;
+    border: 0.25px solid #dbdbdb;
+}
+#shortcut1 a:hover {
+    background-color: #9acbd0;
+    color: #1f96d4;
+    font-weight: bold;
+}
+/* 내가 경험한 여수백병원원 */
+#ctt2 {
+    margin: 0 auto 80px;
+    width: 1180px; /*280*4개 and 20*3개 */
+    overflow: hidden;
+}
+#later {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+}
+#later > li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#later > li:last-child {
+    margin-right: 0;
+}
+#later a {
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    width: 280px; height: 200px;
+    border: 0.25px solid #dbdbdb;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#later > li:hover {
+    background-color: rgba(154, 203, 208, 0.8);
+    font-weight: bold;
+}
+#ctt2 span {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
+
+/* 어꺠연구영상 */
+#ctt3 > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.tube {
+    width:100%;
+    height: 230px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.tube img {
+    display: block;
+    transition: all 0.3s ease;
+}
+.tube::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 65px;
+    background: #dbdbdb;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.tube:hover::before {
+    opacity: 0.6;
+}
+.tube:hover p {
+    color: #1f96d4;
+}
+.tube a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tube p {
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    padding: 8px 0;
+}
+.tube span {
+    display: inline-block;
+    position: absolute;
+    bottom: 0; right: 0;
+    font-size: 12px;
+    padding: 8px 0;
+}
+/* 고객지원 */
+#ctt4 {
+    margin-bottom: 120px;
+}
+#ctt4 > div > img {
+    width: 630px;
+    height: 360px;
+}
+#shortcut2 {
+    display: grid;
+    grid-template-columns: 190px 190px 190px;
+    grid-template-rows: 180px 180px;
+}
+#shrtcut2 > li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 300px;
+}
+#shortcut2 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    color: #f2efe7;
+    background-color: #1f4997;
+}
+#shortcut2 a:hover {
+    color: #f2efe7;
+    background-color: #1f96d4;
+    cursor: pointer;
+}
+
+#shortcut2 span {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+    font-size: 0.95rem;
+    padding-top: 25px;
+}
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 400px;
+    display: block;
+    background-color: #1f4997;
+}
+#foot {
+    width: 1200px;
+    margin: auto;
+    padding-top: 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    line-height: 25px;
+    color: #f2efe7;
+}
+#foo_left img {
+    padding-bottom: 40px;
+}
+#foo_left span {
+    display: inline-block;
+    width: 80px;
+    font-weight: 700;
+}
+#foo_right > li > a:hover{
+    color: #9acbd0;
+}

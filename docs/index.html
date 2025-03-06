@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 글꼴 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <!-- css초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>여수백병원</title>
+</head>
+<body>
+<header id="headbg">
+    <div id="head">
+        <a href="#"><img src="images/logo.png" alt="여수백병원 로고"></a>
+        <ul id="nav">
+            <li><a href="#">병원소개</a>
+                <ul class="sub">
+                    <li><a href="#">미션 / 비전</a></li>
+                    <li><a href="#">병원장인삿말</a></li>
+                    <li><a href="#">의료진 소개</a></li>
+                    <li><a href="#">병원 둘러보기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">병원이용안내</a>
+                <ul class="sub">
+                    <li><a href="#">진료시간 안내</a></li>
+                    <li><a href="#">입/퇴원 안내</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">어깨연구자료</a>
+                <ul class="sub">
+                    <li><a href="#">어깨영상모아보기</a></li>
+                    <li><a href="#">어깨연구발표</a></li>
+                </ul>
+            </li>
+            <li><a href="#">커뮤니티</a>
+                <ul class="sub">
+                    <li><a href="#">내가 경험한 여수백병원</a></li>
+                    <li><a href="#">병원소식</a></li>
+                    <li><a href="#">여수백이야기기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">상담 및 예약</a></li>
+        </ul>
+        <div id="search">
+            <a href="#"><img src="images/search(blue).png" alt="여수백병원_검색"></a>
+        </div>
+    </div>
+</header>
+<section class="big_wrap">
+    <div id="slider">
+        <div id="slides">
+            <a href="#"><img src="images/banner1.jpg" alt="여수백병원 배너1"></a>
+            <a href="#"><img src="images/banner2.jpg" alt="여수백병원 배너2"></a>
+        </div>
+        <div id="indicators"></div>
+    </div>
+
+    <div id="ctt1">
+        <div>
+            <div class="title">
+                <h3>공지사항</h3>
+                <a href="#">더보기</a>
+            </div>
+            <div id="notice">
+                <ul >
+                    <li><a href="#">[채용정보] 여수백병원 '입사지원서'양식입니다.</a><span>2024. 11. 24.</span></li>
+                    <li><a href="#">[알립니다] 여수백병원 오시는 길 일방통해로 주의 하세요!! </a><span>2023. 08. 25. </span></li>
+                    <li><a href="#">[알립니다] 여수백병원 진료를 아침 7시부터 시작합니다 </a><span>2022. 02. 16.</span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="shortcut1">
+            <a href="#">
+                <img src="images/shortcut3_(blue).png" alt="바로가기_상담예약">
+                상담예약
+            </a>
+            <a href="#">
+                <img src="images/shortcut2_(blue).png" alt="바로가기_진료안내">
+                진료안내
+            </a>
+        </div>
+    </div>
+</section>
+<section class="big_wrap">
+    <div id="ctt2">
+        <div class="title">
+            <h3>내가 경험한 여수백병원</h3>
+            <a href="#">더보기</a>
+        </div>
+        <ul id="later">
+            <li><a href="#">[사천]<br>여기만큼 친절, 봉사, 청결한 병원은 찾기 힘든거 같아요<br><span>2025.02.25.</span></a></li>
+            <li><a href="#">[통영]<br>병원이라는 느낌은 환자복에서만 느껴집니다<br><span>2025.02.22.</span></a></li>
+            <li><a href="#">[광주]<br>모든 시스템이 아름답고 완벽하고 우아하다<br><span>2025.02.18.</span></a></li>
+            <li><a href="#">[여수]<br>어깨치료 전도사가 될게요~<br><span>2025.02.06.</span></a></li>
+            <li><a href="#">[하동]<br>왜 1년동안 망설였는지 후회가 되네요<br><span>2025.01.31.</span></a></li>
+            <li><a href="#">[세종]<br>몸은 아팠지만 마음은 힐링되는 시간이었다<br><span>2025.01.27.</span></a></li>
+            <li><a href="#">[구례]<br>여수백병원 선택이 제일 잘한 것이라 생각한다<br><span>2025.01.21.</span></a></li>
+            <li><a href="#">[여수]<br>이해하기 쉬운 설명과 빠른 처방도 최고였다<br><span>2025.01.17.</span></a></li>
+        </ul>
+    </div>
+    <div id="ctt3">
+        <div class="title">
+            <h3>어깨연구영상</h3>
+            <a href="#">더보기</a>
+        </div>
+        <ul>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_09.jpg" alt="유툽컨텐츠1">
+                    <p>어깨 치료를 했을 분인데 확 젊어졌어요</p><br>
+                    <span>2024.03.21.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_03.jpg" alt="유툽컨텐츠2">
+                    <p>2년동안 수술을 미뤘더니... 어깨 근육이 말라 죽었어요ㅜㅜ</p><br>
+                    <span>2024.03.08.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_05.jpg" alt="유툽컨텐츠3">
+                    <p>어깨치료, 실버버튼 받았어요!</p><br>
+                    <span>2024.03.08.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_17.jpg" alt="유툽컨텐츠4">
+                    <p>어깨탈구 수술했는데 또 재발했어요</p><br>
+                    <span>2024.03.08.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_07.jpg" alt="유툽컨텐츠5">
+                    <p>어깻죽지가 늘 아픈데 삼십견이래요...</p><br>
+                    <span>2024.03.08.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_18.jpg" alt="유툽컨텐츠6">
+                    <p>어깨가 아파서 남편한테 짜증만 냈어요</p><br>
+                    <span>2024.03.08.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_15.jpg" alt="유툽컨텐츠7">
+                    <p>어깨통증, 바빠서 13년을 미뤘는데...결국ㅜㅜ</p><br>
+                    <span>2024.02.21.</span>
+                </a>
+            </li>
+            <li class="tube">
+                <a href="#">
+                    <img src="images/youtube_16.jpg" alt="유툽컨텐츠8">
+                    <p>오십견인데 왜 나만 수술해요?</p><br>
+                    <span>2024.02.14.</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section >
+    <div id="ctt4">
+        <h3>고객지원</h3>
+        <div class="flex">
+            <ul id="shortcut2">
+                <li>
+                    <a href="#">
+                        <img src="images/shortcut2.png" alt="고객지원_상담예약">
+                        <span>상담예약</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shortcut3.png" alt="고객지원_진료안내">
+                        <span>진료안내</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shortcut1.png" alt="고객지원_어깨연구자료">
+                        <span>어깨연구자료</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shortcut6.png" alt="고객지원_여수백이야기">
+                        <span>여수백이야기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shortcut5.png" alt="고객지원_의료진소개">
+                        <span>의료진소개</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/shortcut4.png" alt="고객지원_오시는 길">
+                        <span>오시는 길</span>
+                    </a>
+                </li>
+            </ul>
+            <img src="images/map.JPG" alt="백병원 지도">
+        </div>
+    </div>
+</section>
+<footer>
+    <div id="foot">
+        <div id="foo_left">
+            <img src="images/logo_big.png" alt="백병원_하단로고">
+            <ul>
+                <li><span>병원장</span>백창희</li>
+                <li><span>주소</span>전라남도 여수시 여서1로 50 여수백병원</li>
+                <li><span>TEL</span>1877-5075</li>
+            </ul>
+        </div>
+        <ul id="foo_right">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">환자관리장전</a></li>
+            <li><a href="#">비급여고지</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
